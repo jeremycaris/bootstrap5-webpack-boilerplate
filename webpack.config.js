@@ -3,6 +3,7 @@ import path from "path"
 import MiniCssExtractPlugin from "mini-css-extract-plugin"
 import HtmlWebpackPlugin from "html-webpack-plugin"
 import CopyPlugin from "copy-webpack-plugin"
+import webpack from "webpack"
 
 export default {
   // Define the entry points of our application (can be multiple for different sections of a website)
@@ -22,6 +23,11 @@ export default {
   // Define loaders
   module: {
     rules: [
+      // Use handlebars js for templating
+      { 
+        test: /\.hbs$/, 
+        loader: "handlebars-loader" 
+      },
       // Use babel for JS files
       {
         test: /\.js$/,
@@ -92,9 +98,30 @@ export default {
       ]
     }),
 
+    // Include jQuery
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }),
+
     // Inject styles and scripts into the HTML
     new HtmlWebpackPlugin({
-      template: path.resolve(process.cwd(), "index.html")
+      'meta': {
+        'charset': 'utf-8',
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
+      },
+      template: path.resolve(process.cwd(), "./src/index.hbs")
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "about/index.html",
+      template: path.resolve(process.cwd(), "./src/about.hbs")
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "contact/index.html",
+      template: path.resolve(process.cwd(), "./src/contact.hbs")
     })
   ],
 
@@ -104,7 +131,7 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "index.html")
+      path.resolve(process.cwd(), "./src/index.hbs")
     ],
     compress: true,
     port: process.env.PORT || 9090,
