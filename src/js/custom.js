@@ -1,4 +1,3 @@
-// import $ from "jquery";
-// window.jQuery = window.$ = $;
-
-$('.navbar-brand').css('color', 'red');
+$(function () {
+    $('.navbar-brand span').css('color', 'red');
+});

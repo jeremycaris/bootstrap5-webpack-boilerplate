@@ -4,14 +4,311 @@
     <title>About</title>
 </head>
 <body>
-    {{> partials/header}}
-    
-    <div class="container mt-3 my-md-4">
-        <main>
-            About
-        </main>
-    </div>
+{{> partials/navbar}}
 
-    {{> partials/footer}}
+<div class="container">
+<main class="my-5">
+
+    <!-- IMAGE CARDS -->
+
+    <section id="photos" class="mt-4">
+        <h3>Photos</h3>
+
+        <div class="row album">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-3 mb-md-4">
+                    <img
+                        srcset="
+                            images/album/001-210x210.jpg 210w,
+                            images/album/001-255x255.jpg 255w,
+                            images/album/001-510x510.jpg 510w
+                        "
+                        src="images/album/001-510x510.jpg"
+                        alt="Nature: 1"
+                        class="img-thumbnail"
+                    />
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-3 mb-md-4">
+                    <img
+                        srcset="
+                            images/album/002-210x210.jpg 210w,
+                            images/album/002-255x255.jpg 255w,
+                            images/album/002-510x510.jpg 510w
+                        "
+                        src="images/album/002-510x510.jpg"
+                        alt="Nature: 1"
+                        class="img-thumbnail"
+                    />
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-3 mb-md-4">
+                    <img
+                        srcset="
+                            images/album/003-210x210.jpg 210w,
+                            images/album/003-255x255.jpg 255w,
+                            images/album/003-510x510.jpg 510w
+                        "
+                        src="images/album/003-510x510.jpg"
+                        alt="Nature: 1"
+                        class="img-thumbnail"
+                    />
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-3 mb-md-4">
+                    <img
+                        srcset="
+                            images/album/004-210x210.jpg 210w,
+                            images/album/004-255x255.jpg 255w,
+                            images/album/004-510x510.jpg 510w
+                        "
+                        src="images/album/004-510x510.jpg"
+                        alt="Nature: 1"
+                        class="img-thumbnail"
+                    />
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-3 mb-md-4">
+                    <img
+                        srcset="
+                            images/album/005-210x210.jpg 210w,
+                            images images/album/005-255x255.jpg 255w,
+                            images/album/005-510x510.jpg 510w
+                        "
+                        src="images/album/005-510x510.jpg"
+                        alt="Nature: 1"
+                        class="img-thumbnail"
+                    />
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-3 mb-md-4">
+                    <img
+                        srcset="
+                            images/album/006-210x210.jpg 210w,
+                            images/album/006-255x255.jpg 255w,
+                            images/album/006-510x510.jpg 510w
+                        "
+                        src="images/album/006-510x510.jpg"
+                        alt="Nature: 1"
+                        class="img-thumbnail"
+                    />
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-3 mb-md-4">
+                    <img
+                        srcset="
+                            images/album/007-210x210.jpg 210w,
+                            images/album/007-255x255.jpg 255w,
+                            images/album/007-510x510.jpg 510w
+                        "
+                        src="images/album/007-510x510.jpg"
+                        alt="Nature: 1"
+                        class="img-thumbnail"
+                    />
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="mb-3 mb-md-4">
+                    <img
+                        srcset="
+                        images/album/008-210x210.jpg 210w,
+                        images/album/008-255x255.jpg 255w,
+                        images/album/008-510x510.jpg 510w
+                        "
+                        src="images/album/008-510x510.jpg"
+                        alt="Nature: 1"
+                        class="img-thumbnail"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /photos -->
+
+    <!-- PROGRESS BARS -->
+
+    <section id="progress-bars">
+        <h3>Progress Bars</h3>
+
+        <div class="progress mb-3">
+            <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 25%"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+            ></div>
+        </div>
+        <div class="progress mb-3">
+            <div
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 50%"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+            ></div>
+        </div>
+        <div class="progress mb-3">
+            <div
+                class="progress-bar bg-warning"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+            ></div>
+        </div>
+        <div class="progress mb-3">
+            <div
+                class="progress-bar bg-danger"
+                role="progressbar"
+                style="width: 100%"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+            ></div>
+        </div>
+    </section>
+
+
+    <section id="drop-up-split" class="my-4">
+        <h3>DropUp Split Button</h3>
+
+        <div class="btn-group dropup">
+            <button
+                type="button"
+                class="btn btn-outline-secondary"
+            >
+                Main Action
+            </button>
+            <button
+                type="button"
+                class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+            >
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tab-panel" class="my-4">
+        <h3 class="mb-3">Tab Panel</h3>
+
+        <ul
+            class="nav nav-tabs"
+            id="myTab"
+            role="tablist"
+        >
+            <li class="nav-item">
+                <a
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    href="#home"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                >
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    href="#projects"
+                    role="tab"
+                    aria-controls="projects"
+                    aria-selected="false"
+                >
+                    Projects
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div
+                class="tab-pane fade show active pt-3"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+            >
+                <p>This is a nice text about me...</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </div>
+            <div
+                class="tab-pane fade pt-3"
+                id="projects"
+                role="tabpanel"
+                aria-labelledby="project-tab"
+            >
+                <p>These are my projects...</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dismissable-alerts" class="my-4">
+        <h3 class="mb-3">Dismissable Alerts</h3>
+
+        <div
+            class="alert alert-success alert-dismissible fade show"
+            role="alert"
+        >
+            <strong>Success!</strong> Your updates have been saved.
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"></button>
+        </div>
+
+        <div
+            class="alert alert-danger alert-dismissible fade show"
+            role="alert"
+        >
+            <strong>Error!</strong> Please fill in all fields.
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"></button>
+        </div>
+    </section>
+
+</main>
+</div>
+
+{{> partials/footer}}
 </body>
 </html>

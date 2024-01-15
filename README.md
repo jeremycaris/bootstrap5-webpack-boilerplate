@@ -1,6 +1,35 @@
-# Bootstrap 5 + WebPack 5 = Boilerplate (with jQuery 3.7.1 and Handlebars templating support included)
+# Bootstrap 5 + WebPack 5 + jQuery 3 & More = Boilerplate 2.0
 
-Cloned, extended, and modified from https://github.com/noreading/bootstrap5-webpack-boilerplate
+Cloned, extended, and modified from [Bootstrap 5 + WebPack 5 = Boilerplate](https://github.com/noreading/bootstrap5-webpack-boilerplate) (Thank you, [Dominik Hanke](https://github.com/noreading)!).
+
+## Updates/Additions
+
+- Updated to Bootstrap 5.3.2
+- Added jQuery 3.7.1
+- Added Handlebars.js templating, preconfigured with a navbar and footer
+- Extended favicons support
+- Pre-built additional sample pages
+- Updated navbar to offcanvas option with dynamically active nav menu items (set with the active class and aria-current="page" attribute via jQuery)
+
+Module dependencies added/updated:
+
+```JSON
+      {
+        "bootstrap": "^5.3.2",
+        "favicons": "^7.1.5",
+        "favicons-webpack-plugin": "^6.0.1",
+        "handlebars-loader": "^1.7.3",
+        "jquery": "^3.7.1",
+      }
+```
+
+Additional usage references:
+- [favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin)
+  - "The default configuration will automatically generate webapp manifest files along with 44 different icon formats as appropriate for iOS devices, Android devices, Windows Phone and various desktop browsers out of your single logo.png (or svg)."
+- [handlebars-loader](https://github.com/pcardune/handlebars-loader)
+  - "Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions. A handlebars expression is a {{, some contents, followed by a }}. When the template is executed, these expressions are replaced with values from an input object." [https://handlebarsjs.com/](https://handlebarsjs.com/)
+
+---
 
 This is a professional front-end template for building web apps and sites faster, without having to create the basic
 setup on your own, every time you start a new project.

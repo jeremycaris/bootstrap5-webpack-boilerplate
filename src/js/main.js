@@ -6,21 +6,21 @@ import {initBootstrap} from "./bootstrap.js";
 
 // Loading bootstrap with optional features
 initBootstrap({
-  tooltip: false,
-  popover: false,
-  toasts: false,
+  tooltip: true,
+  popover: true,
+  toasts: true,
 });
 
-// Your app code
-// console.log(`Hello ${process.env.HELLO}`);
-
-// Add additional js files
-// import './custom.js';
-
 // Update active menu item
-$(document).ready(function () {
+$(function () {
   var url = window.location;
   $('ul.navbar-nav a').filter(function() {
       return this.href == url;
-  }).addClass('active').attr("aria-current","page");
+  }).addClass('active').attr("aria-current","page").append(' <span class="visually-hidden">(Current)</span>');
 });
+
+// Your app code
+console.log(`Hello ${process.env.HELLO}`);
+
+// Add additional js files
+import './custom.js';

@@ -4,6 +4,7 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin"
 import HtmlWebpackPlugin from "html-webpack-plugin"
 import CopyPlugin from "copy-webpack-plugin"
 import webpack from "webpack"
+import FaviconsWebpackPlugin from "favicons-webpack-plugin"
 
 export default {
   // Define the entry points of our application (can be multiple for different sections of a website)
@@ -104,6 +105,10 @@ export default {
       jQuery: 'jquery',
     }),
 
+    new FaviconsWebpackPlugin(
+      './src/images/bootstrap-logo.svg'
+    ),
+
     // Inject styles and scripts into the HTML
     new HtmlWebpackPlugin({
       'meta': {
@@ -117,6 +122,11 @@ export default {
     new HtmlWebpackPlugin({
       filename: "about/index.html",
       template: path.resolve(process.cwd(), "./src/about.hbs")
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "extras/index.html",
+      template: path.resolve(process.cwd(), "./src/extras.hbs")
     }),
 
     new HtmlWebpackPlugin({
