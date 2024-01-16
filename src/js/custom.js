@@ -1,3 +1,3 @@
 $(function () {
-    $('.navbar-brand span').css('color', 'red');
+    // $('.navbar-brand span').css('color', 'red');
 });
