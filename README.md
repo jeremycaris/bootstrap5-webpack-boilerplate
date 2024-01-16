@@ -30,7 +30,7 @@ Additional usage references:
   - "Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions. A handlebars expression is a {{, some contents, followed by a }}. When the template is executed, these expressions are replaced with values from an input object." [https://handlebarsjs.com/](https://handlebarsjs.com/)
 
 
-All images (used in the Carousel and Cards) by <a href="https://unsplash.com/@alexshuperart?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alex Shuper</a> on <a href="https://unsplash.com/photos/a-person-in-a-field-with-a-light-on-their-head-SNliMkZHVig?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+All images (used in the Carousel and Cards) by <a href="https://unsplash.com/@alexshuperart?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alex Shuper</a> on <a href="https://unsplash.com/photos/a-person-in-a-field-with-a-light-on-their-head-SNliMkZHVig?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.
   
 
 ## Original Readme
@@ -463,4 +463,4 @@ npm run images remove
 
 ## 6. Image Credits
 
-`Image attributions have been revised. **/`
+`Image attributions have been revised.`
