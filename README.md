@@ -9,7 +9,7 @@ Cloned, extended, and modified from [Bootstrap 5 + WebPack 5 = Boilerplate](http
 - Added Handlebars.js templating, preconfigured with a navbar and footer
 - Extended favicons support
 - Pre-built additional sample pages
-- Updated navbar to offcanvas option with dynamically active nav menu items (set with the active class and aria-current="page" attribute via jQuery)
+- Updated navbar to offcanvas option with dynamically active nav menu items
 
 Module dependencies added/updated:
 
