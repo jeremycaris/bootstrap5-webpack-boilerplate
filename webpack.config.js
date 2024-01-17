@@ -89,12 +89,16 @@ export default {
       chunkFilename: "[id].css"
     }),
 
-    // Copy images to the public folder
+    // Copy images and Bootstrap Icons files to the public folder
     new CopyPlugin({
       patterns: [
         {
           from: "src/images",
-          to: "images",
+          to: "images"
+        },
+        {
+          from: './node_modules/bootstrap-icons/font/fonts', 
+          to: "./fonts"
         }
       ]
     }),
@@ -120,16 +124,31 @@ export default {
     }),
 
     new HtmlWebpackPlugin({
+      'meta': {
+        'charset': 'utf-8',
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
+      },
       filename: "about/index.html",
       template: path.resolve(process.cwd(), "./src/about.hbs")
     }),
 
     new HtmlWebpackPlugin({
+      'meta': {
+        'charset': 'utf-8',
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
+      },
       filename: "extras/index.html",
       template: path.resolve(process.cwd(), "./src/extras.hbs")
     }),
 
     new HtmlWebpackPlugin({
+      'meta': {
+        'charset': 'utf-8',
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
+      },
       filename: "contact/index.html",
       template: path.resolve(process.cwd(), "./src/contact.hbs")
     })
@@ -141,7 +160,12 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
-      path.resolve(process.cwd(), "./src/index.hbs")
+      path.resolve(process.cwd(), "./src/index.hbs"),
+      path.resolve(process.cwd(), "./src/about.hbs"),
+      path.resolve(process.cwd(), "./src/extras.hbs"),
+      path.resolve(process.cwd(), "./src/contact.hbs"),
+      path.resolve(process.cwd(), "./src/partials/header.hbs"),
+      path.resolve(process.cwd(), "./src/partials/footer.hbs")
     ],
     compress: true,
     port: process.env.PORT || 9090,

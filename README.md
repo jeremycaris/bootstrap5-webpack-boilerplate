@@ -6,10 +6,11 @@ Cloned, extended, and modified from [Bootstrap 5 + WebPack 5 = Boilerplate](http
 
 - Updated to Bootstrap 5.3.2
 - Added jQuery 3.7.1
-- Added Handlebars.js templating, preconfigured with a navbar and footer
-- Extended favicons support
-- Pre-built additional sample pages
+- Added [Bootstrap Icons](https://icons.getbootstrap.com/)
+- Added [Handlebars.js](https://github.com/pcardune/handlebars-loader) templating
+- Pre-built sample pages, preconfigured with a common navbar and footer via Handlbars Partials
 - Updated navbar to offcanvas option with dynamically active nav menu items
+- Extended [favicons](https://github.com/jantimon/favicons-webpack-plugin) support
 
 Module dependencies added/updated:
 
@@ -23,14 +24,7 @@ Module dependencies added/updated:
       }
 ```
 
-Additional usage references:
-- [favicons-webpack-plugin](https://github.com/jantimon/favicons-webpack-plugin)
-  - "The default configuration will automatically generate webapp manifest files along with 44 different icon formats as appropriate for iOS devices, Android devices, Windows Phone and various desktop browsers out of your single logo.png (or svg)."
-- [handlebars-loader](https://github.com/pcardune/handlebars-loader)
-  - "Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions. A handlebars expression is a {{, some contents, followed by a }}. When the template is executed, these expressions are replaced with values from an input object." [https://handlebarsjs.com/](https://handlebarsjs.com/)
-
-
-All images (used in the Carousel and Cards) by <a href="https://unsplash.com/@alexshuperart?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alex Shuper</a> on <a href="https://unsplash.com/photos/a-person-in-a-field-with-a-light-on-their-head-SNliMkZHVig?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.
+All images used in the Carousel and Cards by <a href="https://unsplash.com/@alexshuperart?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alex Shuper</a> on <a href="https://unsplash.com/photos/a-person-in-a-field-with-a-light-on-their-head-SNliMkZHVig?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>.
   
 
 ## Original Readme
