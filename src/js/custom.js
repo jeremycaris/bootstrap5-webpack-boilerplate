@@ -8,5 +8,5 @@ $(function () {
         'text-transform' : 'uppercase',
         'margin-left' : '0.2rem',
         'font-weight' : '700',
-    }).delay(500).fadeIn('slow');
+    }).delay(20).fadeIn('slow');
 });
