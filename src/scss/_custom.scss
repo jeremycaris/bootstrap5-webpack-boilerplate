@@ -1,10 +1,10 @@
-.navbar-brand span {
-    position: relative;
-    bottom: -2px;
-    display: none;
-}
-
 body {
+    .navbar-brand span {
+        position: relative;
+        bottom: -2px;
+        display: none;
+    }
+    
     main {
         min-height: 75vh;
     }
