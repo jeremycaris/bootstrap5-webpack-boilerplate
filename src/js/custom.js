@@ -1,6 +1,7 @@
 // Your app code
 console.log(`Hello ${process.env.HELLO}`);
 
+// Just to demonstrate jQuery is functioning...
 $(function () {
     $('.navbar-brand span').css({
         'color' : '#C8C8C9',
