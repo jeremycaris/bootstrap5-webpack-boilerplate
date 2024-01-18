@@ -6,6 +6,6 @@ body {
     }
     
     main {
-        min-height: 75vh;
+        min-height: calc( 100vh - 593px );
     }
 }
