@@ -19,8 +19,5 @@ $(function () {
   }).addClass('active').attr("aria-current","page").append(' <span class="visually-hidden">(Current)</span>');
 });
 
-// Your app code
-console.log(`Hello ${process.env.HELLO}`);
-
 // Add additional js files
 import './custom.js';

@@ -1,7 +1,7 @@
 {
     "name": "bootstrap5-webpack-boilerplate-2",
     "version": "2.0",
-    "description": "A simple boilerplate using Bootstrap 5, Webpack and Babel, with support added for jQuery 3.7.1, Handlebars templating, extended favicon support, and updated example elements with dynamically active nav menu items",
+    "description": "A boilerplate using Bootstrap 5, Webpack and Babel, along with jQuery 3, Bootstrap Icons, Handlebars templating, extended favicon support, and updated example pages with dynamically active nav menu items",
     "main": "index.js",
     "scripts": {
         "build": "webpack --config webpack.config.js --mode production",
