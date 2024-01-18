@@ -62,7 +62,7 @@ and newer.
 1. Clone the repository into a new folder for your new project.
 
    ```bash
-   git clone git@github.com:noreading/bootstrap5-webpack-boilerplate.git my-project
+   git clone git@github.com:jeremycaris/bootstrap5-webpack-boilerplate-2.git my-project
    ```
 2. Remove the .git directory to add your own CVS later.
 
