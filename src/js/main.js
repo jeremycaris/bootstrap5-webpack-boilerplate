@@ -11,12 +11,15 @@ initBootstrap({
   toasts: true,
 });
 
-// Update active menu item
 $(function () {
+  // Update active menu item
   var url = window.location;
   $('ul.navbar-nav a').filter(function() {
       return this.href == url;
   }).addClass('active').attr("aria-current","page").append(' <span class="visually-hidden">(Current)</span>');
+
+  // Set copyright year dynamically
+  $('#spanYear').html(new Date().getFullYear());
 });
 
 // Add additional js files
