@@ -6,6 +6,22 @@ import CopyPlugin from "copy-webpack-plugin"
 import webpack from "webpack"
 import FaviconsWebpackPlugin from "favicons-webpack-plugin"
 
+// const SitemapPlugin = require('sitemap-webpack-plugin').default;
+import sitemap from "sitemap-webpack-plugin"
+var SitemapPlugin = sitemap.default;
+
+// https://www.npmjs.com/package/robotstxt-webpack-plugin
+// https://github.com/itgalaxy/generate-robotstxt
+import RobotstxtPlugin from "robotstxt-webpack-plugin"
+
+// sitemap paths
+const paths = [
+  '/',
+  '/about/',
+  '/extras/',
+  '/contact/'
+];
+
 export default {
   // Define the entry points of our application (can be multiple for different sections of a website)
   entry: {
@@ -109,9 +125,10 @@ export default {
       jQuery: 'jquery',
     }),
 
-    new FaviconsWebpackPlugin(
-      './src/images/bootstrap-logo.svg'
-    ),
+    new FaviconsWebpackPlugin({
+      logo: './src/images/passgrinder-128.png',
+      logoMaskable: './src/images/maskable_icon.png',
+    }),
 
     // Inject styles and scripts into the HTML
     new HtmlWebpackPlugin({
@@ -151,6 +168,23 @@ export default {
       },
       filename: "contact/index.html",
       template: path.resolve(process.cwd(), "./src/contact.hbs")
+    })
+
+    // Basic usage (output defaults to sitemap.xml)
+    new SitemapPlugin({ 
+      base: 'https://mywebsite.com', paths 
+    }),
+
+    new RobotstxtPlugin({
+      policy: [
+        {
+          userAgent: "*",
+          allow: "/",
+          disallow: "",
+        },
+      ],
+      sitemap: "https://mywebsite.com/sitemap.xml",
+      host: "https://mywebsite.com",
     })
   ],
 
