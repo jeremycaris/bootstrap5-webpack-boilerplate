@@ -11,6 +11,7 @@ Cloned, extended, and modified from [Bootstrap 5 + WebPack 5 = Boilerplate](http
 - Pre-built sample pages, preconfigured with a common navbar and footer via Handlbars Partials
 - Updated navbar to offcanvas option with dynamically active nav menu items
 - Extended [favicons](https://github.com/jantimon/favicons-webpack-plugin) support
+- Added robotstxt-webpack-plugin and sitemap-webpack-plugin
 
 Module dependencies added/updated:
 
