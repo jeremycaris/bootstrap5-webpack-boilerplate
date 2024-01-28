@@ -125,10 +125,10 @@ export default {
       jQuery: 'jquery',
     }),
 
-    new FaviconsWebpackPlugin({
-      logo: './src/images/passgrinder-128.png',
-      logoMaskable: './src/images/maskable_icon.png',
-    }),
+    // new FaviconsWebpackPlugin({
+    //   logo: './src/images/logo-128.png',
+    //   logoMaskable: './src/images/maskable_icon.png',
+    // }),
 
     // Inject styles and scripts into the HTML
     new HtmlWebpackPlugin({
@@ -168,7 +168,7 @@ export default {
       },
       filename: "contact/index.html",
       template: path.resolve(process.cwd(), "./src/contact.hbs")
-    })
+    }),
 
     // Basic usage (output defaults to sitemap.xml)
     new SitemapPlugin({ 
