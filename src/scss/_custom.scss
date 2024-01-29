@@ -2,7 +2,7 @@ body {
     .navbar-brand span {
         position: relative;
         bottom: -2px;
-        display: none;
+        display: none; // Hidden by default, then using jQuery to fadeIn. See custom.js.
     }
     
     main {
